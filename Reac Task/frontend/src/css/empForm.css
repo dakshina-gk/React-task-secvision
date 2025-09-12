@@ -1,0 +1,200 @@
+.employee-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  background: #f4f6f8;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #718096;
+  margin-bottom: 40px;
+}
+
+.form-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  transition: transform 0.3s;
+}
+
+.form-card:hover {
+  transform: translateY(-3px);
+}
+
+.form-card h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-subtext {
+  color: #718096;
+  margin-bottom: 25px;
+}
+
+.emp-form .form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.emp-form .form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.emp-form input,
+.emp-form select {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.emp-form select {
+  height: 46px;
+}
+
+.emp-form input:focus,
+.emp-form select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.error {
+  font-size: 13px;
+  color: #e53e3e;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #3182ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2b6cb0;
+}
+
+.list-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.employee-table-wrapper {
+  max-height: 500px; 
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px; 
+}
+
+.employee-table th {
+  position: sticky;
+  top: 0;
+  background: #f7fafc;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-bottom: 2px solid #e2e8f0;
+  text-align: left;
+  font-size: 15px;
+  z-index: 1;
+}
+
+.employee-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 15px;
+}
+
+.employee-table tbody tr:hover {
+  background: #edf2f7;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.edit-btn {
+  background: #38a169;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.edit-btn:hover {
+  background: #2f855a;
+}
+
+.delete-btn {
+  background: #e53e3e;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #c53030;
+}
+
+.employee-table-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.employee-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+.employee-table-wrapper::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.icon-large {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  color: #3182ce;
+  width: 25px;
+  height: 26px;
+}
