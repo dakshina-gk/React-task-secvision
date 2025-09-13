@@ -45,7 +45,7 @@ function WeatherInfo() {
   return (
     <div className="weather-container">
       <h2 className="weather-title">
-        <MapPin /> Weather in {city}
+        <MapPin style={{"width":"33px", "height":"50px"}} /> Weather in {city}
       </h2>
 
       <form onSubmit={handleSearch} className="weather-search">
@@ -61,11 +61,11 @@ function WeatherInfo() {
       {weather ? (
         <div className="weather-details">
           <p className="weather-temp">
-            <ThermometerSun /> {weather.main.temp} °C
+            <ThermometerSun style={{"width":"33px", "height":"50px"}}  /> {weather.main.temp} °C
           </p>
           <hr />
           <p className="weather-condition">
-            <CloudSun /> {weather.weather[0].description}
+            <CloudSun style={{"width":"23px", "height":"35px", "margin-bottom":"5px"}}/> {weather.weather[0].description}
           </p>
         </div>
       ) : (

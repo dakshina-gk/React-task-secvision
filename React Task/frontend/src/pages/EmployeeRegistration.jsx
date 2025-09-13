@@ -124,7 +124,7 @@ function EmployeeRegistration() {
 
   return (
     <div className="employee-container">
-      <h1 className="title"><Building2 className="icon-large" />Employee Management System</h1>
+      <h1 className="title"><Building2 className="icon-large header-icon" />Employee Management System</h1>
 
       <div className="form-card">
         <h2><User className="icon-large" />
@@ -204,7 +204,7 @@ function EmployeeRegistration() {
 
       <h2 className="list-title"><Users className="icon-large"/>Employee List</h2>
       {employees.length === 0 ? (
-        <p>No employees.</p>
+        <p style={ {"color": "#718096","margin-left":"10px"}}>No employees.</p>
       ) : (
         <div className="employee-table-wrapper">
           <table className="employee-table">

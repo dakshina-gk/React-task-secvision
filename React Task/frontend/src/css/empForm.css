@@ -105,9 +105,11 @@
 }
 
 .list-title {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: 600;
+  padding: 10px;
+
 }
 
 .employee-table-wrapper {
@@ -177,17 +179,37 @@
 }
 
 .employee-table-wrapper::-webkit-scrollbar {
-  width: 10px;
-}
-
-.employee-table-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.25);
-  border-radius: 5px;
+  width: 8px; 
+  height: 10px; 
 }
 
 .employee-table-wrapper::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-  border-radius: 5px;
+  background: transparent; 
+}
+
+.employee-table-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cbd5e0, #a0aec0); 
+  border-radius: 10px;
+  border: 2px solid #f7fafc; 
+  transition: background 0.3s;
+}
+
+.employee-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a0aec0, #718096);
+}
+
+.employee-table-wrapper::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+.icon-large {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  color: #3182ce;
+  width: 25px;
+  height: 26px;
 }
 
 .icon-large {
@@ -197,4 +219,50 @@
   color: #3182ce;
   width: 25px;
   height: 26px;
+}
+
+.emp-form select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 12px 40px 12px 12px; 
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%233182ce' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+}
+
+.emp-form select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+ .emp-form select option {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #333;
+} 
+
+.emp-form select option:hover {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+
+.header-icon{
+  background: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
+  border-radius: 9px;
+  color: white;
+  padding: 8px;
+  width: 63px;
+  height: 60px;
 }
